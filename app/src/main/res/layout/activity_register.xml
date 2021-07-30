@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/gilroy_semibold"
+        android:text="Sign Up"
+        android:textColor="#000"
+        android:textSize="20sp"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/applogo" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:orientation="vertical"
+            android:weightSum="4"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView2">
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:fontFamily="@font/gilroy_semibold"
+                    android:text="FULL NAME"
+                    android:textColor="#000"
+                    android:textStyle="normal" />
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:elevation="0dp"
+                    app:cardCornerRadius="15dp"
+                    app:cardElevation="0dp"
+                    app:cardMaxElevation="0dp"
+                    app:strokeColor="#ccc"
+                    app:strokeWidth="1dp">
+
+                    <EditText
+                        android:id="@+id/register_full_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="#F7F8F9"
+                        android:ems="10"
+                        android:inputType="textPersonName"
+                        android:paddingStart="10dp"
+                        android:textSize="14sp" />
+                </com.google.android.material.card.MaterialCardView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:fontFamily="@font/gilroy_semibold"
+                    android:text="EMAIL"
+                    android:textColor="#000"
+                    android:textStyle="normal" />
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:elevation="0dp"
+                    app:cardCornerRadius="15dp"
+                    app:cardElevation="0dp"
+                    app:cardMaxElevation="0dp"
+                    app:strokeColor="#ccc"
+                    app:strokeWidth="1dp">
+
+                    <EditText
+                        android:id="@+id/register_email_address"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="#F7F8F9"
+                        android:ems="10"
+                        android:inputType="textEmailAddress"
+                        android:paddingStart="10dp"
+                        android:textSize="14sp" />
+                </com.google.android.material.card.MaterialCardView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="15dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:fontFamily="@font/gilroy_semibold"
+                    android:text="Phone Number"
+                    android:textColor="#000"
+                    android:textStyle="normal" />
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:elevation="0dp"
+                    app:cardCornerRadius="15dp"
+                    app:cardElevation="0dp"
+                    app:cardMaxElevation="0dp"
+                    app:strokeColor="#ccc"
+                    app:strokeWidth="1dp">
+
+                    <LinearLayout
+                        android:background="#F7F8F9"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <com.rilixtech.widget.countrycodepicker.CountryCodePicker
+                            android:id="@+id/register_ccp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:elevation="0dp"
+                            android:layout_gravity="center"
+                            app:ccp_backgroundColor="#F7F8F9"
+                            app:ccp_defaultNameCode="IN"
+                            app:layout_constraintStart_toStartOf="@+id/textView2"
+                            app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+                        <EditText
+                            android:id="@+id/register_mobile_number"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:background="#F7F8F9"
+                            android:ems="10"
+                            android:inputType="textEmailAddress"
+                            android:paddingStart="10dp"
+                            android:textSize="14sp" />
+
+                    </LinearLayout>
+
+
+                </com.google.android.material.card.MaterialCardView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:fontFamily="@font/gilroy_semibold"
+                    android:text="PASSWORD"
+                    android:textColor="#000"
+                    android:textStyle="normal" />
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:elevation="0dp"
+                    app:cardCornerRadius="15dp"
+                    app:cardElevation="0dp"
+                    app:cardMaxElevation="0dp"
+                    app:strokeColor="#ccc"
+                    app:strokeWidth="1dp">
+
+                    <EditText
+                        android:id="@+id/register_password"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="#F7F8F9"
+                        android:ems="10"
+                        android:inputType="textPassword"
+                        android:paddingStart="10dp"
+                        android:textSize="14sp" />
+                </com.google.android.material.card.MaterialCardView>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="30dp"
+            android:onClick="register_btn"
+            app:cardBackgroundColor="#1152fd"
+            app:cardCornerRadius="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/gilroy_semibold"
+                android:text="Sign Up"
+                android:textColor="#fff"
+                android:textSize="18sp" />
+        </androidx.cardview.widget.CardView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:id="@+id/notify_otp_verification_txt"
+            android:layout_width="wrap_content"
+            android:textSize="16sp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/ptsans"
+            android:text="Already have an account?"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:fontFamily="@font/ptsans"
+            android:onClick="register_login_screen"
+            android:padding="10dp"
+            android:text="Sign In"
+            android:textColor="#1152fd"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/notify_otp_verification_txt"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

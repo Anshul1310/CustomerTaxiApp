@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">TaxiApp Customer</string>
+    <string name="navigation_drawer_open">nav_opened</string>
+    <string name="navigation_drawer_close">nav_closed</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="map_key">AIzaSyCHIuzSsQJywqheOJMCeZS2i87FUPg53sg</string>
+</resources>

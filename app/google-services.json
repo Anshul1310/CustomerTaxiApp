@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "553201384425",
+    "firebase_url": "https://taxi-app-b2d7e-default-rtdb.firebaseio.com",
+    "project_id": "taxi-app-b2d7e",
+    "storage_bucket": "taxi-app-b2d7e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:553201384425:android:f5ebddf1005db6577fa978",
+        "android_client_info": {
+          "package_name": "com.ebooker.taxiappcustomer"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "553201384425-tmci3qf6hjr3u5ahqjanaok313gkps0r.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCHIuzSsQJywqheOJMCeZS2i87FUPg53sg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "553201384425-tmci3qf6hjr3u5ahqjanaok313gkps0r.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
