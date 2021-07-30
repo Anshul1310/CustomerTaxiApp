@@ -9,6 +9,7 @@
         android:roundIcon="@drawable/applogo"
         android:supportsRtl="true"
         android:theme="@style/Theme.TaxiAppCustomer">
+        <activity android:name=".FromTo"></activity>
         <activity android:name=".OtpVerification" />
         <activity android:name=".ForgotPassword" />
         <activity android:name=".RegisterActivity" />
