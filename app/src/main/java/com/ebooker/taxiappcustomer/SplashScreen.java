@@ -35,7 +35,7 @@ public class SplashScreen extends AppCompatActivity {
             public void onFinish() {
                 if (FirebaseAuth.getInstance().getCurrentUser() != null) {
                     if(sharedPreferences.getBoolean("isMobileVerified", false)){
-                        startActivity(new Intent(SplashScreen.this, MainActivity.class));
+                        startActivity(new Intent(SplashScreen.this, BookingStatus.class));
                     }else{
                         Intent intent=new Intent(SplashScreen.this, OtpVerification.class);
                         intent.putExtra("mobileNumber",sharedPreferences.getString("mobileNumber","+91839401639"));
