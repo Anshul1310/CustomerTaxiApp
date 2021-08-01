@@ -128,8 +128,8 @@ public class OtpVerification extends AppCompatActivity {
                             .setCallbacks(new PhoneAuthProvider.OnVerificationStateChangedCallbacks() {
                                 @Override
                                 public void onVerificationCompleted(@NonNull PhoneAuthCredential phoneAuthCredential) {
-//                                otpbox.setText(phoneAuthCredential.getSmsCode());
                                     try {
+                                        SplashScreen.sharedPreferences.edit().putBoolean("isMobileVerified",true).apply();
                                         otpbox1.setText(phoneAuthCredential.getSmsCode().charAt(0) + "");
                                         otpbox2.setText(phoneAuthCredential.getSmsCode().charAt(1) + "");
                                         otpbox3.setText(phoneAuthCredential.getSmsCode().charAt(2) + "");

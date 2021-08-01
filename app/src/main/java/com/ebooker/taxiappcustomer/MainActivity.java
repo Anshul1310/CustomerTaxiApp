@@ -39,7 +39,6 @@ public class MainActivity extends AppCompatActivity {
                 .replace(R.id.frame_layout, new HomeFragment())
                 .commit();
 
-        View nav_layout = navigationView.getChildAt(0);
 
         findViewById(R.id.nav_drawer_item_one).setOnClickListener(new View.OnClickListener() {
             @Override

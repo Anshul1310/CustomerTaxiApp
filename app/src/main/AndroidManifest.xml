@@ -9,7 +9,9 @@
         android:roundIcon="@drawable/applogo"
         android:supportsRtl="true"
         android:theme="@style/Theme.TaxiAppCustomer">
-        <activity android:name=".SelectCar"></activity>
+        <activity android:name=".FeedbackScreen"></activity>
+        <activity android:name=".CarSelected" />
+        <activity android:name=".SelectCar" />
         <activity android:name=".BookingStatus" />
         <activity android:name=".FromTo" />
         <activity android:name=".OtpVerification" />

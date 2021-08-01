@@ -15,12 +15,13 @@ import com.google.firebase.auth.FirebaseAuth;
 public class SplashScreen extends AppCompatActivity {
 
     public static SharedPreferences sharedPreferences;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash_screen);
         Window window = this.getWindow();
-        sharedPreferences=getSharedPreferences(getPackageName()+"",MODE_PRIVATE);
+        sharedPreferences = getSharedPreferences(getPackageName() + "", MODE_PRIVATE);
         window.clearFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
         window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
         window.setStatusBarColor(ContextCompat.getColor(this, android.R.color.white));
@@ -34,11 +35,11 @@ public class SplashScreen extends AppCompatActivity {
             @Override
             public void onFinish() {
                 if (FirebaseAuth.getInstance().getCurrentUser() != null) {
-                    if(sharedPreferences.getBoolean("isMobileVerified", false)){
-                        startActivity(new Intent(SplashScreen.this, BookingStatus.class));
-                    }else{
-                        Intent intent=new Intent(SplashScreen.this, OtpVerification.class);
-                        intent.putExtra("mobileNumber",sharedPreferences.getString("mobileNumber","+91839401639"));
+                    if (sharedPreferences.getBoolean("isMobileVerified", false)) {
+                        startActivity(new Intent(SplashScreen.this, MainActivity.class));
+                    } else {
+                        Intent intent = new Intent(SplashScreen.this, OtpVerification.class);
+                        intent.putExtra("mobileNumber", sharedPreferences.getString("mobileNumber", "+91839401639"));
                         startActivity(intent);
                     }
                 } else {

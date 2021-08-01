@@ -8,16 +8,15 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+public class ReceiptFragment extends Fragment {
 
-public class SupportFragment extends Fragment {
+   private View view;
 
-
-    private View view;
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        view =inflater.inflate(R.layout.fragment_support, container, false);
+        view= inflater.inflate(R.layout.fragment_receipt, container, false);
         return view;
     }
 }
