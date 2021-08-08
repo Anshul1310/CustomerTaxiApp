@@ -79,14 +79,14 @@
                     android:layout_weight="1">
 
                     <TextView
-                        android:id="@+id/textView4"
+                        android:id="@+id/from_to_from_address"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:ellipsize="end"
                         android:fontFamily="@font/inter"
                         android:gravity="center_vertical"
+                        android:hint="From"
                         android:maxLines="1"
-                        android:text="College Road, Chamba, Tehri Garhwal - 249145, kkk"
                         android:textColor="#000"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
@@ -101,7 +101,7 @@
                         android:elevation="0dp"
                         android:ellipsize="end"
                         android:maxLines="1"
-                        app:layout_constraintBottom_toBottomOf="@+id/textView4"
+                        app:layout_constraintBottom_toBottomOf="@+id/from_to_from_address"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintHorizontal_bias="0.5"
                         app:layout_constraintStart_toStartOf="parent" />
@@ -114,11 +114,12 @@
                     android:layout_weight="1">
 
                     <TextView
+                        android:id="@+id/from_to_to_addresss"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:fontFamily="@font/inter"
                         android:gravity="center_vertical"
-                        android:text="Rishikesh, Dehradun, Uttarakhand"
+                        android:hint="Where are you Going?"
                         android:textColor="#000"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
